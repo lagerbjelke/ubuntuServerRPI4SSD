@@ -1,0 +1,12 @@
+[pi4]
+max_framebuffers=2
+kernel=vmlinuz
+initramfs initrd.img followkernel
+
+[all]
+arm_64bit=1
+cmdline=cmdline.txt
+dtoverlay=vc4-fkms-v3d
+dtparam=sd_poll_once
+disable_overscan=1
+enable_uart=1
